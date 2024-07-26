@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+        System.out.println("WELCOME TO MY CALCULATOR !");
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER YOUR FRIST NUMBER:-");
+        int FristNum =sc.nextInt();
+        
+        System.out.println("ENTER YOUR OPERATOR :-");
+        int Operator = sc.next().charAt(0);
+
+        System.out.println("ENTER YOUR SECOND NUMBER:-");
+        int SecondNum = sc.nextInt();
+      
+ System.out.println("YOUR ANSWEAR IS :-");
+        switch (Operator) {
+                      case '+':  System.out.println(FristNum+SecondNum);
+                       break;
+                       case '-':  System.out.println(FristNum-SecondNum);
+                       break;
+                       case '*':  System.out.println(FristNum*SecondNum);
+                       break;
+                       case '/':  System.out.println(FristNum/SecondNum);
+                       break;
+                       case '%':  System.out.println(FristNum%SecondNum);
+                       break;
+        
+            default: System.out.println("PLESE ENTER THE CORRECT NUMBER");
+                break;
+        }
+        
+    }
+}
